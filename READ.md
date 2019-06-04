@@ -9,3 +9,18 @@
 
 ## 工具
 [Git 下载](https://git-scm.com/download)
+
+## 脚本
+```sql
+create table USER
+(
+  ID           INT auto_increment NOT NULL,
+  ACCOUNT_ID   VARCHAR(100),
+  NAME         VARCHAR(50),
+  TOKEN        CHAR(36),
+  GMT_CREATE   BIGINT,
+  GMT_MODIFIED BIGINT,
+  constraint USER_PK
+    primary key (ID)
+);
+```
